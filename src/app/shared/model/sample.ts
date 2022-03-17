@@ -1,5 +1,5 @@
 export interface Sample {
-  id: number;
+  id: string;
   name: string;
   location: string;
   desiredAnalysis: string[];

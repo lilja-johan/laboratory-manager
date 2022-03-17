@@ -4,7 +4,7 @@ export class SampleData {
 
   static samples: Sample[] = [
     {
-      "id": 1,
+      "id": "5000-S123-22",
       "name": "small vial with transparent fluid",
       "location": "Central",
       "desiredAnalysis":
@@ -17,7 +17,7 @@ export class SampleData {
       "status":"Under Transport"
     },
     {
-      "id": 2,
+      "id": "5000-S124-22",
       "name": "Green bottle with smelly fluid",
       "location": "Central",
       "desiredAnalysis":
