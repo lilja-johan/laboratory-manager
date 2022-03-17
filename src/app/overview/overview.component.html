@@ -1,1 +1,32 @@
 <p>overview works!</p>
+<div class="table-responsive">
+  <table class="table mb-0"
+         *ngIf="samples$ | async as samples">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Registered Analysis</th>
+        <th>Completed Analysis</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let sample of samples">
+      <tr>
+        <td>{{ sample.id }}</td>
+        <td>{{ sample.name }}</td>
+        <td>{{ sample.location }}</td>
+        <td>
+          <ul *ngFor="let analysis of sample.registeredAnalysis">
+            <li>{{analysis}}</li>
+          </ul>
+        </td>
+        <td>
+          <ul *ngFor="let analysis of sample.completedAnalysis">
+            <li>{{analysis}}</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

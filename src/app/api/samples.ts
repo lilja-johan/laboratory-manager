@@ -1,5 +1,8 @@
-{
-  "MOCK_SAMPLE_DATA" :[
+import { Sample } from "../shared/model/sample";
+
+export class SampleData {
+
+  static samples: Sample[] = [
     {
       "id": 1,
       "name": "small vial with transparent fluid",
@@ -9,7 +12,7 @@
         "Mikrobial Analysis(M21)",
         "Nitrogen Content Analysis(NCA2)"
       ],
-      "registeredAnalysis": [],
+      "registeredAnalysis": ["Nitrogen Content Analysis(NCA2)"],
       "completedAnalysis":[],
       "status":"Under Transport"
     },
@@ -23,7 +26,7 @@
         "Relative PFAS Levels(rPFAS)"
       ],
       "registeredAnalysis": [],
-      "completedAnalysis":[],
+      "completedAnalysis":["Relative PFAS Levels(rPFAS)"],
       "status":"Under Transport"
     }
   ]

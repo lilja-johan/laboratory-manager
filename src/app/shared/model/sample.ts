@@ -5,5 +5,5 @@ export interface Sample {
   desiredAnalysis: string[];
   registeredAnalysis: string[];
   completedAnalysis:string[];
-  status:string[];
+  status:string;
 }
